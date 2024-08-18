@@ -5,7 +5,6 @@ body {
 }
 
 .header {
-  height: 72px;
   background: darkmagenta;
   color: white;
 }
@@ -26,4 +25,63 @@ body {
   border: 1px solid #eee;
   box-shadow: 2px 4px 16px rgba(0,0,0,.06);
   border-radius: 4px;
+}
+/* Solution */
+
+.items {
+  /* height: 100vh; */
+  display: flex;
+  flex-direction: column;
+}
+
+.middle {
+  display: flex;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.card {
+  flex-basis: 270px;
+  padding: 20px;
+  height: 240px;
+  margin: 20px;
+}
+
+.sidebar {
+  padding: 15px;
+  flex-shrink: 0;
+}
+
+ul {
+  padding: 0px;
+  margin: 0px;
+}
+
+li {
+  list-style-type: none;
+  margin-bottom: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+}
+
+h1 {
+  margin: 15px;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
